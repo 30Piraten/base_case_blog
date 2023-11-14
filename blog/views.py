@@ -5,23 +5,23 @@ from .models import Post
 # Create your views here.
 
 
-class BlogPostView(ListView):
+class Content(ListView):
     model = Post
     template_name = "home.html"
 
 
-class BlogDetailView(DetailView):
+class ContentDetail(DetailView):
     model = Post
     template_name = "post_detail.html"
 
 
-class BlogCreateView(CreateView):
+class CreateContent(CreateView):
     model = Post
     template_name = "new_post.html"
     fields = ["title", "author", "body"]
 
 
-class BlogUpdateView(UpdateView):
+class UpdateContent(UpdateView):
     model = Post
     template_name = "edit_post.html"
     fields = ["title", "body"]
