@@ -6,4 +6,6 @@
     <p>{{ object.body }}</p>
 </div>
 
+<a href="{% url 'edit_post' post.pk %}">+ Edit this blog</a>
+
 {% endblock content %}
