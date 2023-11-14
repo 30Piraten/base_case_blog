@@ -7,5 +7,6 @@
 </div>
 
 <a href="{% url 'edit_post' post.pk %}">+ Edit this blog</a>
+<a href="{% url 'delete_post' post.pk %}">- Delete this post</a>
 
 {% endblock content %}
